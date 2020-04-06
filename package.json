@@ -1,0 +1,45 @@
+{
+  "name": "npm-template",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx gulp watch",
+    "dev": "npm run start",
+    "lint": "eslint --fix src",
+    "build": "npx gulp build",
+    "watch": "npx gulp watch",
+    "clear": "npx gulp clean",
+    "test": "npx jest"
+  },
+  "keywords": [],
+  "author": "",
+  "repository": "",
+  "license": "ISC",
+  "jest": {
+    "verbose": true,
+    "bail": true,
+    "collectCoverage": true
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.12",
+    "babel-loader": "^8.0.5",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "jest": "^24.8.0",
+    "webpack": "^4.30.0",
+    "webpack-merge": "^4.2.1",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {}
+}

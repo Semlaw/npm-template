@@ -1,6 +1,8 @@
 # npm-template
 a template for npm package development。
 
+[![Build Status](https://travis-ci.org/Semlaw/npm-template.svg?branch=master)](https://travis-ci.org/Semlaw/npm-template)
+
 ### IDE
 
 - 推荐使用`Visual Studio Code`作为IDE，使用ESlint进行JavaScript 语法规则和代码风格的检查。
@@ -29,3 +31,6 @@ npm test          # 使用 jest 运行 ./tests 内的用例，在 ./coverage 生
  - `.eslintrc.js`        `eslintrc`配置
  - `gulpfile.js`         `gulp`构建脚本
  - `webpack.config.js`   `webpack`配置
+ - `travis.yml`          `travis`[配置](https://travis-ci.org)`
+### 
+

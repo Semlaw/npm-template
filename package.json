@@ -1,7 +1,7 @@
 {
   "name": "npm-template",
   "version": "0.1.0",
-  "description": "",
+  "description": "npm-template project",
   "main": "dist/index.js",
   "scripts": {
     "start": "npx gulp watch",
@@ -10,7 +10,9 @@
     "build": "npx gulp build",
     "watch": "npx gulp watch",
     "clear": "npx gulp clean",
-    "test": "npx jest"
+    "test": "npx jest",
+    "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "",

@@ -2,6 +2,7 @@
 a template for npm package development。
 
 [![Build Status](https://travis-ci.org/Semlaw/npm-template.svg?branch=master)](https://travis-ci.org/Semlaw/npm-template)
+[![Coverage Status](https://coveralls.io/repos/github/Semlaw/npm-template/badge.svg?branch=master)](https://coveralls.io/github/Semlaw/npm-template?branch=master)
 
 ### IDE
 
@@ -20,6 +21,8 @@ npm run watch     # 以 webpack mode = development 构建 umd 文件，并对源
 npm build         # 以 webpack mode = production 构建 umd 文件，输出至 ./dist
 
 npm test          # 使用 jest 运行 ./tests 内的用例，在 ./coverage 生成测试报告
+
+npm run coveralls # 提交测试覆盖率报告提交给 Coveralls (需在本地配置.coveralls.yml配置文件)
 
 ```
 
